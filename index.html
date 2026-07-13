@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Banaras – Mahadev ki Nagri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="logo">🔱 Explore <span>Banaras</span></div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#ghats">Ghats</a></li>
+          <li><a href="#sarnath">Sarnath</a></li>
+          <li><a href="#temples">Temples</a></li>
+          <li><a href="#bhu">BHU</a></li>
+          <li><a href="#food">Food</a></li>
+          <li><a href="#dress">Dress</a></li>
+          <li><a href="#galis">Galis</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home"
+    style="background-image: linear-gradient(rgba(20,10,30,0.55), rgba(20,10,30,0.75)), url('https://commons.wikimedia.org/wiki/Special:FilePath/Evening%20Ganga%20Aarti%20at%20Dashashwamedh%20Ghat.JPG');">
+    <div class="hero-content fade-in">
+      <h1>Welcome to Banaras 🔱</h1>
+      <h2>Mahadev ki Nagri</h2>
+      <p>The oldest living city in the world, where the Ganga flows and Mahadev resides.</p>
+      <a href="#about" class="btn-explore">Explore Now</a>
+    </div>
+    <div class="scroll-down">↓ scroll</div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="section-title fade-in">
+      <h2>About Banaras</h2>
+      <div class="underline"></div>
+    </div>
+    <div class="about-content fade-in">
+      <div class="about-img">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ganga%20Mahal%20Ghat%20Assi,%20Varanasi.JPG" alt="Ganga Ghat Varanasi">
+      </div>
+      <div class="about-text">
+        <p>
+          Varanasi, also known as Banaras or Kashi, is one of the oldest continuously
+          inhabited cities in the world. Situated on the banks of the holy river Ganga,
+          it is regarded as the spiritual capital of India and the sacred abode of
+          Lord Shiva — hence the name <strong>"Mahadev ki Nagri."</strong>
+        </p>
+        <p>
+          Every evening, thousands gather at the ghats to witness the mesmerizing
+          Ganga Aarti, a divine ritual of fire, chants, and devotion. Banaras is a
+          living blend of ancient temples, narrow lanes, boat rides at dawn, and
+          timeless spirituality that has drawn seekers and travelers for centuries.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GHATS SECTION -->
+  <section class="ghats" id="ghats">
+    <div class="section-title fade-in">
+      <h2>Ghats of Varanasi</h2>
+      <div class="underline"></div>
+    </div>
+    <div class="ghats-content fade-in">
+      <div class="ghat-stat-box">
+        <span class="ghat-number">84</span>
+        <span class="ghat-label">Total Ghats along the Ganga<br>(some accounts count up to 88)</span>
+      </div>
+      <div class="about-text">
+        <p>
+          Stretching nearly 6.5 kilometres along the western bank of the Ganga, Varanasi's
+          ghats are a continuous chain of stone steps built mostly during the 18th century by
+          Maratha, Rajput and Peshwa patrons. Most ghats are used for bathing and rituals, while
+          <strong>Manikarnika Ghat</strong> and <strong>Harishchandra Ghat</strong> are reserved
+          exclusively for cremation.
+        </p>
+        <p>
+          The five most sacred ghats, called the <strong>Panch-Tirtha</strong>, are Assi Ghat,
+          Dashashwamedh Ghat, Manikarnika Ghat, Panchganga Ghat and Adi Keshav Ghat. A sunrise
+          boat ride from Assi to Manikarnika remains one of the most iconic experiences in India.
+        </p>
+      </div>
+    </div>
+    <div class="ghats-grid">
+      <div class="ghat-chip fade-in">Dashashwamedh Ghat</div>
+      <div class="ghat-chip fade-in">Assi Ghat</div>
+      <div class="ghat-chip fade-in">Manikarnika Ghat</div>
+      <div class="ghat-chip fade-in">Harishchandra Ghat</div>
+      <div class="ghat-chip fade-in">Panchganga Ghat</div>
+      <div class="ghat-chip fade-in">Tulsi Ghat</div>
+      <div class="ghat-chip fade-in">Kedar Ghat</div>
+      <div class="ghat-chip fade-in">Man Mandir Ghat</div>
+      <div class="ghat-chip fade-in">Scindia Ghat</div>
+      <div class="ghat-chip fade-in">Raj Ghat</div>
+      <div class="ghat-chip fade-in">Lalita Ghat</div>
+      <div class="ghat-chip fade-in">Adi Keshav Ghat</div>
+    </div>
+  </section>
+
+  <!-- FAMOUS PLACES SECTION -->
+  <section class="places" id="places">
+    <div class="section-title fade-in">
+      <h2>Famous Places</h2>
+      <div class="underline"></div>
+    </div>
+
+    <div class="cards-container">
+      <div class="card fade-in">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kashi%20Vishwanath%20Temple.jpg" alt="Kashi Vishwanath Temple">
+        <div class="card-body">
+          <h3>Kashi Vishwanath Temple</h3>
+          <p>One of the twelve Jyotirlingas, dedicated to Lord Shiva, standing at the heart of the holy city.</p>
+        </div>
+      </div>
+
+      <div class="card fade-in">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Evening%20Ganga%20Aarti%20Assi%20Ghat%2C%20Varanasi%2011.jpg" alt="Ganga Ghat">
+        <div class="card-body">
+          <h3>Ganga Ghats</h3>
+          <p>Witness the breathtaking Ganga Aarti and sunrise boat rides along the sacred ghats of Varanasi.</p>
+        </div>
+      </div>
+
+      <div class="card fade-in">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dhamekh%20Stupa%2C%20Sarnath.jpg" alt="Sarnath">
+        <div class="card-body">
+          <h3>Sarnath</h3>
+          <p>The sacred site where Lord Buddha delivered his first sermon after attaining enlightenment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SARNATH SECTION -->
+  <section class="sarnath" id="sarnath">
+    <div class="section-title fade-in">
+      <h2>Sarnath — Buddha's First Sermon</h2>
+      <div class="underline"></div>
+    </div>
+    <p class="section-intro fade-in">
+      Just 10 km from Varanasi, Sarnath is one of the four holiest Buddhist pilgrimage sites in
+      the world. It was here that Gautama Buddha gave his first teaching, setting the
+      "Wheel of Dharma" in motion after attaining enlightenment at Bodh Gaya.
+    </p>
+    <div class="cards-container">
+      <div class="card fade-in">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/14.%20Dhamek%20Stupa%2C%20Sarnath.jpg" alt="Dhamek Stupa Sarnath">
+        <div class="card-body">
+          <h3>Dhamek Stupa</h3>
+          <p>A massive cylindrical stupa marking the exact spot where Buddha preached his first sermon to five disciples.</p>
+        </div>
+      </div>
+      <div class="card fade-in">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chaukhandi%20Stupa%201.JPG" alt="Chaukhandi Stupa Sarnath">
+        <div class="card-body">
+          <h3>Chaukhandi Stupa</h3>
+          <p>A terraced Gupta-era mound topped with an octagonal Mughal tower, built to mark Buddha's meeting with his disciples.</p>
+        </div>
+      </div>
+      <div class="card fade-in">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lion%20Capital%20of%20Ashoka.jpg" alt="Ashoka Pillar Lion Capital Sarnath">
+        <div class="card-body">
+          <h3>Ashoka Pillar &amp; Lion Capital</h3>
+          <p>Emperor Ashoka's polished sandstone pillar; its four-lion capital is now India's National Emblem, preserved in Sarnath Museum.</p>
+        </div>
+      </div>
+      <div class="card fade-in">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sarnath%20pillar%20stump%20and%20the%20parts.jpg" alt="Sarnath Museum ruins">
+        <div class="card-body">
+          <h3>Sarnath Museum &amp; Ruins</h3>
+          <p>The oldest site museum of the Archaeological Survey of India, housing Mauryan, Gupta and Kushan-era Buddhist sculptures.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEMPLES SECTION -->
+  <section class="temples" id="temples">
+    <div class="section-title fade-in">
+      <h2>Sacred Temples of Kashi</h2>
+      <div class="underline"></div>
+    </div>
+    <div class="cards-container">
+      <div class="card fade-in">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kashi%20Vishwanath%20Temple.jpg" alt="Kashi Vishwanath Temple">
+        <div class="card-body">
+          <h3>Kashi Vishwanath Temple</h3>
+          <p>The most revered of the twelve Jyotirlingas, standing at the very heart of the old city on the banks of the Ganga.</p>
+        </div>
+      </div>
+      <div class="card fade-in">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sankat%20Mochan%20Hanuman%20Mandir.jpg" alt="Sankat Mochan Hanuman Temple">
+        <div class="card-body">
+          <h3>Sankat Mochan Hanuman Temple</h3>
+          <p>Founded by saint-poet Tulsidas in the 16th century, this "reliever of troubles" temple is famous for its resident monkeys and its annual music festival.</p>
+        </div>
+      </div>
+      <div class="card fade-in">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/New%20Vishwanath%20Temple%20at%20BHU.jpg" alt="New Vishwanath Temple BHU">
+        <div class="card-body">
+          <h3>New Vishwanath Temple (BHU)</h3>
+          <p>Built by the Birla family inside the BHU campus, its 77-metre marble shikhara is the tallest temple tower in the world.</p>
+        </div>
+      </div>
+      <div class="card fade-in">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Durga%20Mandir-Varanasi%20India-Andres%20Larin.jpg" alt="Mansa Devi Mandir Varanasi">
+        <div class="card-body">
+          <h3>Mansa Devi Mandir</h3>
+          <p>A shakti shrine devoted to Goddess Mansa, worshipped for fulfilling heartfelt wishes and warding off troubles.</p>
+        </div>
+      </div>
+      <div class="card fade-in">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/A%20Shiva%20temple%20in%20Varanasi.jpg" alt="Tridev Mandir Trilochan Mahadev Varanasi">
+        <div class="card-body">
+          <h3>Tridev Mandir (Trilochan Mahadev)</h3>
+          <p>An ancient Shivalinga near Trilochan Ghat, revered as the "third eye" of Lord Shiva and mentioned in the Kashi Khand scriptures.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BHU SECTION -->
+  <section class="bhu" id="bhu">
+    <div class="section-title fade-in">
+      <h2>Banaras Hindu University (BHU)</h2>
+      <div class="underline"></div>
+    </div>
+    <div class="about-content fade-in">
+      <div class="about-img">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Shri%20Kashi%20Vishwanath%20Mandir%2C%20BHU%2001.JPG" alt="Banaras Hindu University Vishwanath Temple">
+      </div>
+      <div class="about-text">
+        <p>
+          Founded in 1916 by Pandit Madan Mohan Malaviya, <strong>Banaras Hindu University</strong>
+          is one of the largest residential universities in Asia and among India's most prestigious
+          institutions, spread over a sprawling 1,300-acre campus on the southern edge of the city.
+        </p>
+        <p>
+          At its heart stands the <strong>New Vishwanath Temple</strong>, a marble replica of the
+          Kashi Vishwanath Temple with the world's tallest temple tower. The campus is also home to
+          Bharat Kala Bhavan, a museum of rare miniature paintings and sculptures, and is a favourite
+          hangout for students at its ghat — a short walk from Assi Ghat.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAMOUS FOOD SECTION -->
+  <section class="food" id="food">
+    <div class="section-title fade-in">
+      <h2>Famous Food of Banaras</h2>
+      <div class="underline"></div>
+    </div>
+    <div class="food-grid">
+      <div class="food-card fade-in">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Khasta%20kachori.jpg" alt="Kachori Sabzi">
+        <div class="card-body">
+          <h3>Kachori Sabzi</h3>
+          <p>Banaras' iconic breakfast — crisp, lentil-stuffed kachoris served with a spicy potato curry.</p>
+        </div>
+      </div>
+      <div class="food-card fade-in">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tamatar-chat-recipe-removebg-preview.png" alt="Tamatar Chaat">
+        <div class="card-body">
+          <h3>Tamatar Chaat</h3>
+          <p>A tangy, spicy tomato-based chaat found only in Varanasi, topped with sev and coriander.</p>
+        </div>
+      </div>
+      <div class="food-card fade-in">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Punjabi%20Lassi.JPG" alt="Banarasi Lassi">
+        <div class="card-body">
+          <h3>Banarasi Lassi</h3>
+          <p>Thick, creamy lassi topped with malai, served in earthen kulhads — the Blue Lassi shop in Kachori Gali is legendary.</p>
+        </div>
+      </div>
+      <div class="food-card fade-in">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Thandai%20(Spiced%20Indian%20Milk%20Drink).JPG" alt="Thandai">
+        <div class="card-body">
+          <h3>Thandai</h3>
+          <p>A cooling milk drink infused with nuts, saffron and spices — a festive favourite during Holi and Maha Shivratri.</p>
+        </div>
+      </div>
+      <div class="food-card fade-in">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/A%20ROUND%20SWEEETS%20JALEBI.JPG" alt="Jalebi Rabri">
+        <div class="card-body">
+          <h3>Jalebi &amp; Rabri</h3>
+          <p>Crisp, syrup-soaked jalebis paired with thick sweetened rabri — a beloved Banarasi dessert combo.</p>
+        </div>
+      </div>
+      <div class="food-card fade-in">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Paan%20ke%20patte%20(Betel%20leaf)%20from%20India.jpg" alt="Banarasi Paan">
+        <div class="card-body">
+          <h3>Banarasi Paan</h3>
+          <p>Betel leaves filled with areca nut, sweet rose petals and fennel — the perfect way to end a Banarasi meal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAMOUS DRESS SECTION -->
+  <section class="dress" id="dress">
+    <div class="section-title fade-in">
+      <h2>Famous Dress — Banarasi Saree</h2>
+      <div class="underline"></div>
+    </div>
+    <div class="about-content fade-in">
+      <div class="about-img">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/'Sari'%20from%20Varanasi%20(north-central%20India)%2C%20silk%20and%20gold-wrapped%20silk%20yarn%20with%20supplementary%20weft%20brocade.jpg" alt="Banarasi Saree Silk">
+      </div>
+      <div class="about-text">
+        <p>
+          The <strong>Banarasi saree</strong> is one of India's finest handwoven silks, famous for
+          its rich gold and silver zari brocade, intricate Mughal-inspired floral motifs, and
+          opulent finish. Woven by generations of artisan families in Varanasi, a single saree can
+          take anywhere from 15 days to several months to complete on a traditional handloom.
+        </p>
+        <p>
+          Granted a Geographical Indication (GI) tag in 2009, genuine Banarasi silk comes in
+          varieties like Katan (pure silk), Organza, Georgette and Shattir, and remains an
+          essential part of an Indian bride's trousseau to this day.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALIS SECTION -->
+  <section class="galis" id="galis">
+    <div class="section-title fade-in">
+      <h2>The Famous Galis of Banaras</h2>
+      <div class="underline"></div>
+    </div>
+    <p class="section-intro fade-in">
+      With over 1,500 narrow lanes and by-lanes, Varanasi's <strong>galis</strong> are the living
+      arteries of the old city — connecting ghats, temples, bazaars and centuries-old havelis.
+    </p>
+    <div class="cards-container">
+      <div class="card fade-in">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Varanasi%20257c%20Godowlia%20Crossing%20(34286028116).jpg" alt="Godowlia Crossing Varanasi">
+        <div class="card-body">
+          <h3>Godowlia &amp; Chowk</h3>
+          <p>The bustling commercial heart of the old city, packed with sweet shops, saree stores and street-food stalls.</p>
+        </div>
+      </div>
+      <div class="card fade-in">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Busy%20crossing%20in%20Varanasi.jpg" alt="Vishwanath Gali Varanasi">
+        <div class="card-body">
+          <h3>Vishwanath Gali</h3>
+          <p>The narrow lane leading straight to Kashi Vishwanath Temple, lined with shops selling flowers, sweets and religious items.</p>
+        </div>
+      </div>
+      <div class="card fade-in">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jacquard%20loom%20in%20Varanasi.jpg" alt="Thatheri Bazaar Kachori Gali Varanasi">
+        <div class="card-body">
+          <h3>Thatheri Bazaar (Kachori Gali)</h3>
+          <p>Home to century-old havelis, handloom weavers, and the famous Blue Lassi and kachori shops.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section class="gallery" id="gallery">
+    <div class="section-title fade-in">
+      <h2>Gallery</h2>
+      <div class="underline"></div>
+    </div>
+    <div class="gallery-grid">
+      <img class="fade-in" src="https://commons.wikimedia.org/wiki/Special:FilePath/Morning%20Aarti%20at%20Assi%20Ghat%2C%20Varanasi%206.jpg" alt="Morning Aarti">
+      <img class="fade-in" src="https://commons.wikimedia.org/wiki/Special:FilePath/Evening%20Ganga%20Aarti%2C%20at%20Dashashwamedh%20ghat%2C%20Varanasi.jpg" alt="Ganga Aarti">
+      <img class="fade-in" src="https://commons.wikimedia.org/wiki/Special:FilePath/Ganga%20aarti%20with%20conch%20shell%20at%20Dasaswamedh%20Ghat%2C%20Varanasi.jpg" alt="Conch Aarti">
+      <img class="fade-in" src="https://commons.wikimedia.org/wiki/Special:FilePath/Kashi%20Vishwanath%20Temple.jpg" alt="Kashi Vishwanath Temple">
+      <img class="fade-in" src="https://commons.wikimedia.org/wiki/Special:FilePath/Dhamekh%20Stupa%2C%20Sarnath.jpg" alt="Sarnath Stupa">
+      <img class="fade-in" src="https://commons.wikimedia.org/wiki/Special:FilePath/Evening%20Ganga%20Aarti%20Assi%20Ghat%2C%20Varanasi%207.jpg" alt="Assi Ghat Evening">
+      <img class="fade-in" src="https://commons.wikimedia.org/wiki/Special:FilePath/Sankat%20Mochan%20Hanuman%20Mandir.jpg" alt="Sankat Mochan Temple">
+      <img class="fade-in" src="https://commons.wikimedia.org/wiki/Special:FilePath/New%20Vishwanath%20Temple%20at%20BHU.jpg" alt="New Vishwanath Temple BHU">
+      <img class="fade-in" src="https://commons.wikimedia.org/wiki/Special:FilePath/'Sari'%20from%20Varanasi%20(north-central%20India)%2C%20silk%20and%20gold-wrapped%20silk%20yarn%20with%20supplementary%20weft%20brocade.jpg" alt="Banarasi Saree">
+      <img class="fade-in" src="https://commons.wikimedia.org/wiki/Special:FilePath/Chaukhandi%20Stupa%201.JPG" alt="Chaukhandi Stupa">
+      <img class="fade-in" src="https://commons.wikimedia.org/wiki/Special:FilePath/Lion%20Capital%20of%20Ashoka.jpg" alt="Ashoka Pillar Sarnath">
+      <img class="fade-in" src="https://commons.wikimedia.org/wiki/Special:FilePath/Thandai%20(Spiced%20Indian%20Milk%20Drink).JPG" alt="Thandai">
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">🔱 Explore Banaras</div>
+      <p>Mahadev ki Nagri — where spirituality meets eternity.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#ghats">Ghats</a>
+        <a href="#sarnath">Sarnath</a>
+        <a href="#temples">Temples</a>
+        <a href="#bhu">BHU</a>
+        <a href="#food">Food</a>
+        <a href="#dress">Dress</a>
+        <a href="#galis">Galis</a>
+        <a href="#gallery">Gallery</a>
+      </div>
+      <p class="copyright">&copy; 2026 Explore Banaras. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+      });
+    });
+
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.15, rootMargin: "0px 0px -50px 0px" };
+    const appearOnScroll = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => appearOnScroll.observe(fader));
+  </script>
+
+</body>
+</html>
